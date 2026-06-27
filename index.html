@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green" >
+
+      </div>
+
+      <div type="button" id="red" class="btn red" >
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="instructionModal" class="modal">
+  <div class="modal-content">
+    <h2>🎮 How to Play Simon</h2>
+
+    <ul>
+      <li>Press any key/button to start.</li>
+      <li>The game flashes a color (for example, Green).
+      </li><li>Click that same color.</li>
+      <li>The game then shows the previous color and adds one more color.Example: Green → Red</li>
+      <li>You must repeat the entire sequence:Click Green, then Red.</li>
+      <li>If you click the wrong color, the game ends and you must restart. </li>
+      <li>Example<br>
+      Round 1: 🟢 → Click 🟢<br>
+      Round 2: 🟢 🔴 → Click 🟢 🔴<br>
+      Round 3: 🟢 🔴 🟡 → Click 🟢 🔴 🟡<br>
+      Round 4: 🟢 🔴 🟡 🔵 → Click 🟢 🔴 🟡 🔵</li><br>
+    </ul>
+
+    <button id="startBtn">Get Started</button>
+  </div>
+</div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
